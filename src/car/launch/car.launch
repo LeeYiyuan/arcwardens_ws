@@ -14,8 +14,15 @@
     <param name="button_nav" value="0"/>
     <param name="button_manual" value="1"/>
     <param name="axis_linear" value="1"/>
-    <param name="axis_angular" value="3"/>
+    <param name="axis_angular" value="2"/>
     <param name="scale_linear" value="1.0"/>
-    <param name="scale_angular" value="0.785398163"/>
+    <param name="scale_angular" value="1.0"/>
+  </node>
+
+  <!-- Low Level Controller -->
+  <node name="low_level_controller" pkg="car" type="low_level_controller" output="screen" respawn="true">
+    <param name="cmd_vel_topic" value="/cmd_vel_final"/>
+    <param name="port" value="/dev/ttyACM0"/>
+    <param name="baudrate" value="9600"/>
   </node>
 </launch>

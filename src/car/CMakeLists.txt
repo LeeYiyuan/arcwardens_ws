@@ -29,3 +29,6 @@ include_directories(${catkin_INCLUDE_DIRS})
 
 add_executable(joystick_teleop src/joystick_teleop.cpp)
 target_link_libraries(joystick_teleop ${catkin_LIBRARIES})
+
+add_executable(low_level_controller src/low_level_controller.cpp)
+target_link_libraries(low_level_controller ${catkin_LIBRARIES})
