@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>car</name>
+  <version>0.0.0</version>
+  <description>The car package</description>
+  <maintainer email="scooter@todo.todo">car</maintainer>
+  <license>TODO</license>
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>serial</build_depend>
+  <build_depend>tf2</build_depend>
+  <build_depend>tf2</build_depend>
+  <build_depend>tf2_ros</build_depend>
+  <build_depend>tf2_msgs</build_depend>
+  <build_depend>tf2_sensor_msgs</build_depend>
+  <build_depend>tf2_geometry_msgs</build_depend>
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>serial</exec_depend>
+  <exec_depend>tf2</exec_depend>
+  <exec_depend>tf2_ros</exec_depend>
+  <exec_depend>tf2_msgs</exec_depend>
+  <exec_depend>tf2_sensor_msgs</exec_depend>
+  <exec_depend>tf2_geometry_msgs</exec_depend>
+</package>
