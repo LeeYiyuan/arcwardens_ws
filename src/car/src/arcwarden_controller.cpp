@@ -16,20 +16,22 @@ void callback(const car::person::ConstPtr &person) {
   int xPixel = person->x - (image_width/2);
   double x = xPixel*distance_constant*z;
 
-  double distance = sqrt(pow(x,2.0)+pow(z,2.0));
-  double angle = -atan(x/z);
-  double angularVelocity = angle/maxAngle;
-  /*if(angularVelocity>1.0){angularVelocity=1.0;}
-  if(angularVelocity<1.0){angularVelocity=-1.0;}
-  */
+  if  (std::isnan(z) || z <= 1.5) {
+    ROS_INFO_STREAM("Distance = NaN");
+
+    twist_msg.linear.x = 0;
+    twist_msg.angular.z = 0;
+  } else {
+    double distance = sqrt(pow(x,2.0)+pow(z,2.0));
+    double angle = -atan(x/z);
+    double angularVelocity = angle/maxAngle;
 
   ROS_INFO_STREAM("Distance = " << distance << ", Angle = " << angle << ", Angular Velocity = " << angularVelocity);
-  // Assume that the speed is 0.5 ms-1
-  double linearVelocity = 1.0/64;
-  //if(!distance.isNaN()){linearVelocity=0.0;}
 
-  twist_msg.angular.z=angularVelocity;
-  twist_msg.linear.x = linearVelocity;
+    twist_msg.linear.x = 0.3;
+    twist_msg.angular.z = angularVelocity;
+  }
+
   pub.publish(twist_msg);
 }
 
