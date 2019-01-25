@@ -4,6 +4,9 @@ Main repository for hacknroll 2019 in NUS.
 Finished in the Top 8! :star:
 
 Link to project - (https://devpost.com/software/followmesempai-otc6mz)
+
+Link to vide - (https://youtu.be/ERCPDWpL_w0)
+
 ## People Following RC-Car 
 
 - Created on Jetson TX-1 with Ubuntu 16.04 and ROS kinetic.
