@@ -9,8 +9,8 @@ Link to vide - (https://youtu.be/ERCPDWpL_w0)
 
 ## People Following RC-Car 
 
-- Created on Jetson TX-1 with Ubuntu 16.04 and ROS kinetic.
-- Camera used was a ZED Stero Camera.
+- Created on Jetson TX-2 with Ubuntu 16.04 and ROS kinetic.
+- Camera used was a ZED Stereo Camera.
 
 Person detection was developed using YOLO which uses a neural network to detect objects and tracking of person was maintained 
 using the Mean Shift Algorithm with the Bhattacharrya Distance. 
